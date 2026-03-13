@@ -1,0 +1,57 @@
+# ============================================================
+# Log Threat Analyzer — .gitignore
+# ============================================================
+
+# ---- Compiled Binaries (never commit these) ----
+*.exe
+*.out
+*.o
+*.a
+*.so
+*.dll
+engine/engine          # compiled Linux binary
+engine/engine.exe      # compiled Windows binary
+
+# ---- Python ----
+__pycache__/
+*.py[cod]
+*.pyo
+.env
+.venv
+venv/
+env/
+*.egg-info/
+dist/
+build/
+.pytest_cache/
+
+# ---- Node / React ----
+node_modules/
+dist/
+.next/
+.cache/
+*.log
+npm-debug.log*
+
+# ---- OS Files ----
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ---- IDE / Editor ----
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# ---- Secrets & Config ----
+.env
+.env.local
+*.key
+*.pem
+config.secret.*
+
+# ---- Log output files (generated, not source) ----
+logs/output/
+*.log

@@ -1,3 +1,5 @@
+from dotenv import load_dotenv
+load_dotenv()
 import asyncio
 import json
 import sys
@@ -156,7 +158,7 @@ def run_ai_analysis(immediate: bool = False):
     user_msg = f"Analyze these {len(batch)} pre-sorted threat events (sorted by timestamp, flagged by C++ engine):\n\n" + "\n".join(lines)
 
     try:
-        client = anthropic.Anthropic()
+        client = anthropic.Anthropic(api_key=os.environ.get("ANTHROPIC_API_KEY"))
         response = client.messages.create(
             model="claude-sonnet-4-20250514",
             max_tokens=800,

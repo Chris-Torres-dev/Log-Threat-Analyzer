@@ -1,5 +1,0 @@
-# Install with: pip install -r requirements.txt
-
-rich>=13.7.0          # terminal UI (tables, color, live view)
-websockets>=12.0      # WebSocket server in bridge.py
-anthropic>=0.25.0     # AI analysis layer

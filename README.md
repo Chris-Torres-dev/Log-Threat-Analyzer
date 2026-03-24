@@ -1,4 +1,4 @@
-# Log Threat Analyzer
+# Log Threat Analyzer (In progress)
 
 A cybersecurity tool that analyzes system and network logs to detect suspicious activity, flag potential threats, and generate risk summaries with AI-powered response recommendations.
 
